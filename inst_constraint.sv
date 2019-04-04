@@ -47,7 +47,7 @@ module inst_constraint(clk,
    wire       MULHSU;
    (* keep *)
    wire       MULHU;
-   
+
 
    // I format alu instructions
    (* keep *)
@@ -74,7 +74,7 @@ module inst_constraint(clk,
    wire       LW;
    (* keep *)
    wire       SW;
-   
+
    assign opcode = instruction[6:0];
    assign rd = instruction[11:7];
    assign rs1 = instruction[19:15];
@@ -134,7 +134,6 @@ module inst_constraint(clk,
    wire 	allowed_alu_I;
    assign allowed_alu_I = (ADDI || SLTI || SLTIU || XORI || ORI || ANDI || SLLI || SRLI || SRAI);
 
-
 // Do not constrain the registers in LW, SW. This is needed for QED but not for
 // single-instruction checking.
 //
@@ -151,12 +150,45 @@ module inst_constraint(clk,
    wire 	allowed_mem;
    assign allowed_mem = (LW || SW);
 
+   (* keep *)
+   wire       JAL;
+   (* keep *)
+   wire       JALR;
+   (* keep *)
+   wire       BEQ;
+   (* keep *)
+   wire       BNE;
+   (* keep *)
+   wire       BLT;
+   (* keep *)
+   wire       BLTU;
+   (* keep *)
+   wire       BGE;
+   (* keep *)
+   wire       BGEU;
+
+   assign JAL = (opcode == 7'b1101111);
+   assign JALR = (FORMAT_I && (opcode == 7'b1100111) && (funct3 == 3'b000));
+
+   assign BEQ = ((opcode == 7'b1100011) && (funct3 == 3'b000));
+   assign BNE = ((opcode == 7'b1100011) && (funct3 == 3'b001));
+   assign BLT = ((opcode == 7'b1100011) && (funct3 == 3'b100));
+   assign BGE = ((opcode == 7'b1100011) && (funct3 == 3'b101));
+   assign BLTU = ((opcode == 7'b1100011) && (funct3 == 3'b110));
+   assign BGEU = ((opcode == 7'b1100011) && (funct3 == 3'b111));
+
+   wire allowed_J;
+   assign allowed_J = (JAL || JALR);
+
+   wire allowed_B;
+   assign allowed_B = (BEQ || BNE || BLT || BLTU || BGE || BGEU);
+
    // NOP to stall the fetch stage (stalling is done by making valid_instruction 0)
    wire 	NOP;
    assign NOP = (opcode == 7'b1111111);
 
    always @(posedge clk) begin
-      assume property (allowed_alu_I | allowed_alu_R | allowed_mem | NOP);
+      assume property (allowed_alu_I | allowed_alu_R | allowed_mem | allowed_B | allowed_J | NOP);
    end
 
 endmodule // inst_constraint
