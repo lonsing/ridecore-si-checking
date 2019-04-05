@@ -1,4 +1,4 @@
-(state_counter = 7_10) -> ((opcode = 19_7) & (funct3 = 1_3)& (funct7 = 0_7)& (rd != 0_5)&(next(instruction)= instruction))
+(state_counter = 7_10) -> ((opcode = 3_7) & (funct3 = 2_3)& (rd != 0_5)&(next(instruction)= instruction))
 (state_counter = 8_10) -> ((next(instruction)= instruction))
 (state_counter = 9_10) -> ((next(instruction)= instruction))
 (state_counter = 10_10) -> ((next(instruction)= instruction))
@@ -14,3 +14,5 @@
 (state_counter = 20_10) -> ((next(instruction)= instruction) & (next(val1) = val1))
 (state_counter = 21_10) -> ((next(instruction)= instruction) &(next(val1) = val1))
 (state_counter = 22_10) -> ((next(instruction)= instruction) & (next(val1) = val1))
+(state_counter = 23_10) -> ((next(instruction)= instruction) & (next(val1) = val1))
+(state_counter = 24_10) -> ((next(instruction)= instruction) & (next(val1) = val1))

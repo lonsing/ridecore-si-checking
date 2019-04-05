@@ -47,7 +47,7 @@ module inst_constraint(clk,
    wire       MULHSU;
    (* keep *)
    wire       MULHU;
-   
+
 
    // I format alu instructions
    (* keep *)
@@ -74,7 +74,7 @@ module inst_constraint(clk,
    wire       LW;
    (* keep *)
    wire       SW;
-   
+
    assign opcode = instruction[6:0];
    assign rd = instruction[11:7];
    assign rs1 = instruction[19:15];
@@ -87,8 +87,13 @@ module inst_constraint(clk,
    assign funct7 = instruction[31:25];
 
    wire         FORMAT_R;
-   assign FORMAT_R = ( (rd < 16) && (rs1 < 16) && (rs2 < 16));
 
+// Do not constrain the registers to be only from the lower half of
+// the register file. This is needed for QED but not for
+// single-instruction checking.
+//   assign FORMAT_R = ( (rd < 16) && (rs1 < 16) && (rs2 < 16));
+   assign FORMAT_R = (1);
+   
    assign ADD = (FORMAT_R && (opcode == 7'b0110011) && (funct7 == 7'b0000000) && (funct3 == 3'b000));
    assign SUB = (FORMAT_R && (opcode == 7'b0110011) && (funct7 == 7'b0100000) && (funct3 == 3'b000));
    assign SLL = (FORMAT_R && (opcode == 7'b0110011) && (funct7 == 7'b0000000) && (funct3 == 3'b001));
@@ -109,8 +114,13 @@ module inst_constraint(clk,
    assign allowed_alu_R = (ADD || SUB || SLL || SLT || SLTU || XOR || SRL || SRA || OR || AND || MUL || MULH || MULHSU || MULHU);
 
    wire         FORMAT_I;
-   assign FORMAT_I = ( (rd < 16) && (rs1 < 16) );
 
+// Do not constrain the registers to be only from the lower half of
+// the register file. This is needed for QED but not for
+// single-instruction checking.
+//   assign FORMAT_I = ( (rd < 16) && (rs1 < 16) );
+   assign FORMAT_I = (1);
+   
    assign ADDI = (FORMAT_I && (opcode == 7'b0010011) && (funct3 == 3'b000));
    assign SLTI = (FORMAT_I && (opcode == 7'b0010011) && (funct3 == 3'b010));
    assign SLTIU = (FORMAT_I && (opcode == 7'b0010011) && (funct3 == 3'b011));
@@ -124,19 +134,61 @@ module inst_constraint(clk,
    wire 	allowed_alu_I;
    assign allowed_alu_I = (ADDI || SLTI || SLTIU || XORI || ORI || ANDI || SLLI || SRLI || SRAI);
 
-   // lw and sw constraints => to allow for finite memory instantiated in dmem by ridecore
-   assign LW = ((rs1 == 5'b00000) && (rd < 16) && (opcode == 7'b0000011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
-   assign SW = ((rs1 == 5'b00000) && (rs2 < 16) && (opcode == 7'b0100011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
+// Do not constrain the registers in LW, SW. This is needed for QED but not for
+// single-instruction checking.
+//
+// TODO: check whether we need to constrain the immediate field (upper 12 bits for LW), but likely not
+//
+// lw and sw constraints => to allow for finite memory instantiated in dmem by ridecore
+//   assign LW = ((rs1 == 5'b00000) && (rd < 16) && (opcode == 7'b0000011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
+//   assign SW = ((rs1 == 5'b00000) && (rs2 < 16) && (opcode == 7'b0100011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
 
+   assign LW = ( (opcode == 7'b0000011) && (funct3 == 3'b010) );
+   assign SW = ( (opcode == 7'b0100011) && (funct3 == 3'b010) );
+
+   
    wire 	allowed_mem;
    assign allowed_mem = (LW || SW);
+
+   (* keep *)
+   wire       JAL;
+   (* keep *)
+   wire       JALR;
+   (* keep *)
+   wire       BEQ;
+   (* keep *)
+   wire       BNE;
+   (* keep *)
+   wire       BLT;
+   (* keep *)
+   wire       BLTU;
+   (* keep *)
+   wire       BGE;
+   (* keep *)
+   wire       BGEU;
+
+   assign JAL = (opcode == 7'b1101111);
+   assign JALR = (FORMAT_I && (opcode == 7'b1100111) && (funct3 == 3'b000));
+
+   assign BEQ = ((opcode == 7'b1100011) && (funct3 == 3'b000));
+   assign BNE = ((opcode == 7'b1100011) && (funct3 == 3'b001));
+   assign BLT = ((opcode == 7'b1100011) && (funct3 == 3'b100));
+   assign BGE = ((opcode == 7'b1100011) && (funct3 == 3'b101));
+   assign BLTU = ((opcode == 7'b1100011) && (funct3 == 3'b110));
+   assign BGEU = ((opcode == 7'b1100011) && (funct3 == 3'b111));
+
+   wire allowed_J;
+   assign allowed_J = (JAL || JALR);
+
+   wire allowed_B;
+   assign allowed_B = (BEQ || BNE || BLT || BLTU || BGE || BGEU);
 
    // NOP to stall the fetch stage (stalling is done by making valid_instruction 0)
    wire 	NOP;
    assign NOP = (opcode == 7'b1111111);
 
    always @(posedge clk) begin
-      assume property (allowed_alu_I | allowed_alu_R | allowed_mem | NOP);
+      assume property (allowed_alu_I | allowed_alu_R | allowed_mem | allowed_B | allowed_J | NOP);
    end
 
 endmodule // inst_constraint

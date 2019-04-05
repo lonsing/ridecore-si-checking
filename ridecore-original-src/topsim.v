@@ -81,6 +81,18 @@ module top
    wire [31:0] shimm;
    (* keep *)
    wire [31:0] shimm2;
+   (* keep *)
+   wire [31:0] addr;
+   (* keep *)
+   wire [11:0] addr_sw;
+   (* keep *)
+   wire [11:0] imm_new;
+   (* keep *)
+   wire signed [63:0] val1_mul;
+   (* keep *)
+   wire signed [63:0] val2_mul;
+   (* keep *)
+   wire [63:0] val_mul;
 
    assign opcode = instruction[6:0];
    assign rd = instruction[11:7];
@@ -93,6 +105,8 @@ module top
    assign imm = {{20{simm12[11]}}, simm12[11:0]};
    assign shimm = {{27{0}}, shamt[4:0]};
    assign shimm2 = {{27{0}}, val2[4:0]};
+   assign val1_mul = {{32{0}}, val1[31:0]};
+   assign val2_mul = {{32{0}}, val2[31:0]};
    inst_constraint inst_constraint0(.clk(clk),
                                     .instruction(instruction));
    // EDIT END
@@ -147,6 +161,7 @@ module top
    dmem datamemory(
 		   .clk(clk),
 		   .addr({2'b0, dmem_addr[`ADDR_LEN-1:2]}),
+       //.addr(dmem_addr),
 		   .wdata(dmem_wdata),
 		   .we(dmem_we),
 		   .rdata(dmem_data)
