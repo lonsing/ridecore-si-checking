@@ -75,7 +75,7 @@ do
     grep -A 5 "\[Single Instruction [[:alnum:]]* $OP\]" $INPUTFILE >> $TMPFILEBMCTEST
 
     # Find patch files related to operator OP, assuming its file name
-    # contains the strin "$OP" (i.e., the current operator name)
+    # contains the string "$OP" (i.e., the current operator name)
     BUGINJECTIONPATCHFILES=`find $PATCHDIR -iname "$OP"`
 
     declare -a BUGINJECTIONPATCHFILES=(`find $PATCHDIR -iname "*$OP.patch"`);
