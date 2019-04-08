@@ -1,0 +1,63 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		./testing-workflow/run-si-tests.sh
+[runlim] argv[1]:		cosa/single-xori.txt
+[runlim] argv[2]:		testing-workflow/bug-injection-patches/
+[runlim] argv[3]:		ridecore-original-src/
+[runlim] start:			Mon Apr  8 10:17:47 2019
+[runlim] main pid:		18593
+Operator name: XORI
+  Bug injection patch file for instruction XORI:  testing-workflow/bug-injection-patches/alu-bug-injected_1_XORI.patch
+  Original Verilog file name: alu.v
+HEAD is now at f09715e Merge branch 'master' into testing-workflow
+  Patching original file alu.v
+patching file ridecore-original-src//alu.v
+  Running CoSA --problems cosa/tmpfilebmctest-18593.txt
+Parsing file "cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		9.9 time, 11.0 real, 202.4 MB
+[runlim] sample:		0.6 time, 21.0 real, 62.2 MB
+DONE
+Parsing file "cosa/reset_procedure.ets"... DONE
+Parsing file "cosa/init.ssts"... DONE
+Parsing file "cosa/state_copy.ssts"... DONE
+Parsing file "cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for XORI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.6 time, 31.0 real, 459.7 MB
+__[runlim] sample:		20.6 time, 41.0 real, 680.4 MB
+___[runlim] sample:		30.6 time, 51.0 real, 817.7 MB
+__[runlim] sample:		40.6 time, 61.0 real, 1096.2 MB
+__[runlim] sample:		50.6 time, 71.0 real, 1318.2 MB
+__[runlim] sample:		60.6 time, 81.0 real, 1545.2 MB
+__[runlim] sample:		70.6 time, 91.0 real, 1711.0 MB
+_[runlim] sample:		80.6 time, 101.0 real, 1878.3 MB
+__[runlim] sample:		90.6 time, 111.0 real, 2074.9 MB
+[runlim] sample:		100.6 time, 121.0 real, 2078.2 MB
+_[runlim] sample:		110.6 time, 131.0 real, 2187.7 MB
+[runlim] sample:		120.6 time, 141.0 real, 2218.0 MB
+_[runlim] sample:		130.6 time, 151.0 real, 2371.7 MB
+_..[runlim] sample:		140.6 time, 161.0 real, 2542.4 MB
+..[runlim] sample:		150.6 time, 171.0 real, 2680.6 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for XORI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 25
+[runlim] sample:		160.6 time, 181.0 real, 3150.1 MB
+  Test for XORI using testing-workflow/bug-injection-patches/alu-bug-injected_1_XORI.patch failed, CoSA proved the property unexpectedly.
+  Will abort now.
+Cleaning up temporary files.
+  cleanup: resetting any local changes
+HEAD is now at f09715e Merge branch 'master' into testing-workflow
+[runlim] end:			Mon Apr  8 10:20:52 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		4084
+[runlim] real:			185.92 seconds
+[runlim] time:			165.44 seconds
+[runlim] space:			3165.4 MB
+[runlim] samples:		1849
