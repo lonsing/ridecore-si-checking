@@ -101,6 +101,9 @@ do
         echo "  Patching original file $ORIGFILENAME"
         patch -i $BUGINJECTIONPATCHFILE $VERILOGSRC/$ORIGFILENAME
 
+	echo "  Output of 'git diff' to verify successful bug injection:"
+	git diff
+	
         echo "  Running CoSA --problems $TMPFILEBMCTEST"
         
         CoSA --problems $TMPFILEBMCTEST 2>&1 | tee $TMPFILECOSALOG
@@ -111,9 +114,11 @@ do
         if (($RESEXPECTED))
         then
             echo "  Test for $OP using $BUGINJECTIONPATCHFILE failed, CoSA proved the property unexpectedly."
-            echo "  Will abort now."
-            cleanup "1";
-            exit 1
+#
+#           UPDATE: do not abort after failed test
+#           echo "  Will abort now."
+#           cleanup "1";
+#           exit 1
         else
             echo "  Test for $OP using $BUGINJECTIONPATCHFILE succeeded, CoSA found a counterexample as expected."
         fi
