@@ -1,0 +1,533 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		7739 MB
+[runlim] argv[0]:		./testing-workflow/run-si-tests.sh
+[runlim] argv[1]:		cosa/single-ADD.txt
+[runlim] argv[2]:		testing-workflow/bug-injection-patches-ADD/
+[runlim] argv[3]:		ridecore-original-src/
+[runlim] start:			Mon Apr  8 22:48:48 2019
+[runlim] main pid:		8193
+Operator name: ADD
+  Bug injection patch file for instruction ADD:  testing-workflow/bug-injection-patches-ADD/alu-bug-injected_1_ADD.patch
+  Original Verilog file name: alu.v
+HEAD is now at c9ef8a8 added files for demo
+  Patching original file alu.v
+patching file ridecore-original-src//alu.v
+  Output of 'git diff' to verify successful bug injection:
+diff --git a/ridecore-original-src/alu.v b/ridecore-original-src/alu.v
+index 6a7aa92..9131742 100755
+--- a/ridecore-original-src/alu.v
++++ b/ridecore-original-src/alu.v
+@@ -16,7 +16,7 @@ module alu(
+ 
+    always @(*) begin
+       case (op)
+-        `ALU_OP_ADD : out = in1 + in2;
++        `ALU_OP_ADD : out = in1 ^ in2;
+         `ALU_OP_SLL : out = in1 << shamt;
+         `ALU_OP_XOR : out = in1 ^ in2;
+         `ALU_OP_OR : out = in1 | in2;
+  Running CoSA --problems cosa/tmpfilebmctest-8193.txt
+Parsing file "cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		9.9 time, 10.8 real, 192.8 MB
+[runlim] sample:		19.9 time, 20.8 real, 192.8 MB
+DONE
+Parsing file "cosa/reset_procedure.ets"... DONE
+Parsing file "cosa/init.ssts"... DONE
+Parsing file "cosa/state_copy.ssts"... DONE
+Parsing file "cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for ADD" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		5.1 time, 30.8 real, 251.6 MB
+_[runlim] sample:		15.1 time, 40.8 real, 505.3 MB
+___[runlim] sample:		25.1 time, 50.8 real, 691.6 MB
+__[runlim] sample:		35.1 time, 60.8 real, 822.5 MB
+__[runlim] sample:		45.1 time, 70.8 real, 1022.0 MB
+__[runlim] sample:		55.1 time, 80.8 real, 1204.1 MB
+__[runlim] sample:		65.1 time, 90.8 real, 1458.2 MB
+_[runlim] sample:		75.1 time, 100.8 real, 1622.8 MB
+__[runlim] sample:		85.1 time, 110.8 real, 1905.3 MB
+_[runlim] sample:		95.1 time, 120.8 real, 2047.3 MB
+__[runlim] sample:		105.1 time, 130.8 real, 2156.0 MB
+_[runlim] sample:		115.1 time, 140.8 real, 2333.3 MB
+_.[runlim] sample:		125.1 time, 150.8 real, 2306.4 MB
+.[runlim] sample:		135.1 time, 160.8 real, 2562.7 MB
+[runlim] sample:		145.1 time, 170.8 real, 2675.1 MB
+ FALSE
+
+*** SUMMARY ***
+
+** Problem Single Instruction for ADD **
+Description: "Check for Single Instruction"
+Result: FALSE
+Counterexample:
+---> INIT <---
+  I: clk = 0_1
+  I: instruction = 134217855_32
+  I: rd_copy = 0_5
+  I: reset_done = False
+  I: reset_x = 0_1
+  I: state_counter = 0_10
+  I: val1 = 0_32
+  I: val2 = 0_32
+  I: pipe.aregfile.regfile.mem = Array{BV{5}, BV{32}}(0_32)[11_5 := 1073741824_32][1_5 := 1048640_32][24_5 := 16384_32][25_5 := 1073758208_32][27_5 := 536870912_32][29_5 := 1073741856_32][2_5 := 1073741824_32][3_5 := 2147483648_32][8_5 := 2147483648_32]
+
+---> STATE 1 <---
+  S1: clk = 1_1
+  S1: instruction = 201326719_32
+  S1: state_counter = 1_10
+  S1: val1 = 1073743872_32
+  S1: val2 = 2147483680_32
+
+---> STATE 2 <---
+  S2: clk = 0_1
+  S2: instruction = 2147483775_32
+  S2: state_counter = 2_10
+  S2: val1 = 33554432_32
+  S2: val2 = 1073741824_32
+
+---> STATE 3 <---
+  S3: clk = 1_1
+  S3: instruction = 536871039_32
+  S3: state_counter = 3_10
+  S3: val1 = 1073741824_32
+  S3: val2 = 33554432_32
+
+---> STATE 4 <---
+  S4: clk = 0_1
+  S4: instruction = 134217855_32
+  S4: state_counter = 4_10
+  S4: val1 = 134217728_32
+  S4: val2 = 135266304_32
+
+---> STATE 5 <---
+  S5: clk = 1_1
+  S5: instruction = 2147483775_32
+  S5: state_counter = 5_10
+  S5: val1 = 33554432_32
+  S5: val2 = 1073741824_32
+
+---> STATE 6 <---
+  S6: clk = 0_1
+  S6: instruction = 1073742867_32
+  S6: state_counter = 6_10
+  S6: val1 = 1073741824_32
+  S6: val2 = 3221225472_32
+
+---> STATE 7 <---
+  S7: clk = 1_1
+  S7: instruction = 12487987_32
+  S7: reset_done = True
+  S7: reset_x = 1_1
+  S7: state_counter = 7_10
+  S7: val1 = 0_32
+  S7: val2 = 0_32
+
+---> STATE 8 <---
+  S8: clk = 0_1
+  S8: rd_copy = 26_5
+  S8: state_counter = 8_10
+  S8: val1 = 1342177280_32
+  S8: val2 = 1207959552_32
+
+---> STATE 9 <---
+  S9: clk = 1_1
+  S9: state_counter = 9_10
+  S9: val1 = 1073741857_32
+  S9: val2 = 1075838976_32
+
+---> STATE 10 <---
+  S10: clk = 0_1
+  S10: state_counter = 10_10
+  S10: val1 = 1610612736_32
+  S10: val2 = 1073741824_32
+
+---> STATE 11 <---
+  S11: clk = 1_1
+  S11: instruction = 8421503_32
+  S11: state_counter = 11_10
+  S11: val1 = 1073741860_32
+  S11: val2 = 0_32
+
+---> STATE 12 <---
+  S12: clk = 0_1
+  S12: instruction = 2189462783_32
+  S12: state_counter = 12_10
+  S12: val1 = 3221225472_32
+  S12: val2 = 1073741824_32
+
+---> STATE 13 <---
+  S13: clk = 1_1
+  S13: instruction = 16777343_32
+  S13: state_counter = 13_10
+  S13: val1 = 1073741824_32
+  S13: val2 = 0_32
+
+---> STATE 14 <---
+  S14: clk = 0_1
+  S14: instruction = 4289758079_32
+  S14: state_counter = 14_10
+  S14: val1 = 1342177280_32
+  S14: val2 = 1073741824_32
+
+---> STATE 15 <---
+  S15: clk = 1_1
+  S15: instruction = 2189427071_32
+  S15: state_counter = 15_10
+  S15: val1 = 67108864_32
+  S15: val2 = 0_32
+
+---> STATE 16 <---
+  S16: clk = 0_1
+  S16: instruction = 4287496319_32
+  S16: state_counter = 16_10
+  S16: val1 = 1207959552_32
+  S16: val2 = 1073741824_32
+
+---> STATE 17 <---
+  S17: clk = 1_1
+  S17: instruction = 1107296639_32
+  S17: state_counter = 17_10
+  S17: val1 = 67108864_32
+  S17: val2 = 1077936128_32
+
+---> STATE 18 <---
+  S18: clk = 0_1
+  S18: instruction = 297343_32
+  S18: state_counter = 18_10
+  S18: val1 = 3221225472_32
+  S18: val2 = 1073741824_32
+
+---> STATE 19 <---
+  S19: clk = 1_1
+  S19: instruction = 1073751167_32
+  S19: state_counter = 19_10
+  S19: val1 = 1077936128_32
+  S19: val2 = 3254779904_32
+
+---> STATE 20 <---
+  S20: clk = 0_1
+  S20: instruction = 127_32
+  S20: state_counter = 20_10
+  S20: val1 = 1073741856_32
+  S20: val2 = 1073741824_32
+
+---> STATE 21 <---
+  S21: clk = 1_1
+  S21: instruction = 1073741951_32
+  S21: state_counter = 21_10
+
+---> STATE 22 <---
+  S22: clk = 0_1
+  S22: state_counter = 22_10
+  S22: pipe.aregfile.regfile.mem = Array{BV{5}, BV{32}}(0_32)[11_5 := 1073741824_32][1_5 := 1048640_32][24_5 := 16384_32][25_5 := 1073758208_32][26_5 := 32_32][27_5 := 536870912_32][29_5 := 1073741856_32][2_5 := 1073741824_32][3_5 := 2147483648_32][8_5 := 2147483648_32]
+Counterexamples: [1], [2]
+Traces (max) length: 23
+
+*** TRACES ***
+
+[1]:	trace[1]-Single Instruction for ADD.vcd
+  Test for ADD using testing-workflow/bug-injection-patches-ADD/alu-bug-injected_1_ADD.patch succeeded, CoSA found a counterexample as expected.
+  Bug injection patch file for instruction ADD:  testing-workflow/bug-injection-patches-ADD/alu-bug-injected_2_ADD.patch
+  Original Verilog file name: decoder.v
+HEAD is now at c9ef8a8 added files for demo
+  Patching original file decoder.v
+patching file ridecore-original-src//decoder.v
+  Output of 'git diff' to verify successful bug injection:
+diff --git a/ridecore-original-src/decoder.v b/ridecore-original-src/decoder.v
+index 6fd9b7a..913efef 100755
+--- a/ridecore-original-src/decoder.v
++++ b/ridecore-original-src/decoder.v
+@@ -12,7 +12,7 @@ module decoder(
+ 	       output reg [`SRC_A_SEL_WIDTH-1:0]  src_a_sel,
+                output reg [`SRC_B_SEL_WIDTH-1:0]  src_b_sel,
+ 	       output reg 			  wr_reg,
+-	       
++
+ 	       output reg 			  uses_rs1,
+ 	       output reg 			  uses_rs2,
+ 	       output reg 			  illegal_instruction,
+@@ -21,7 +21,7 @@ module decoder(
+ //	       output reg 			  dmem_use,
+ //	       output reg 			  dmem_write,
+ 	       output wire [2:0] 		  dmem_size,
+-	       output wire [`MEM_TYPE_WIDTH-1:0]  dmem_type, 
++	       output wire [`MEM_TYPE_WIDTH-1:0]  dmem_type,
+ 	       output reg [`MD_OP_WIDTH-1:0] 	  md_req_op,
+ 	       output reg 			  md_req_in_1_signed,
+ 	       output reg 			  md_req_in_2_signed,
+@@ -32,21 +32,21 @@ module decoder(
+    wire [`ALU_OP_WIDTH-1:0] 			  srl_or_sra;
+    wire [`ALU_OP_WIDTH-1:0] 			  add_or_sub;
+    wire [`RS_ENT_SEL-1:0] 			  rs_ent_md;
+-   
++
+    wire [6:0] 		    opcode = inst[6:0];
+    wire [6:0] 		    funct7 = inst[31:25];
+    wire [11:0] 		    funct12 = inst[31:20];
+    wire [2:0] 		    funct3 = inst[14:12];
+ // reg [`MD_OP_WIDTH-1:0]   md_req_op;
+    reg [`ALU_OP_WIDTH-1:0]  alu_op_arith;
+-   
++
+    assign rd = inst[11:7];
+    assign rs1 = inst[19:15];
+    assign rs2 = inst[24:20];
+ 
+    assign dmem_size = {1'b0,funct3[1:0]};
+    assign dmem_type = funct3;
+-   
++
+    always @ (*) begin
+       imm_type = `IMM_I;
+       src_a_sel = `SRC_A_RS1;
+@@ -59,7 +59,7 @@ module decoder(
+       //     dmem_write = 1'b0;
+       rs_ent = `RS_ENT_ALU;
+       alu_op = `ALU_OP_ADD;
+-      
++
+       case (opcode)
+ 	`RV32_LOAD : begin
+ //           dmem_use = 1'b1;
+@@ -192,7 +192,7 @@ module decoder(
+ 
+    always @(*) begin
+       case (funct3)
+-        `RV32_FUNCT3_ADD_SUB : alu_op_arith = add_or_sub;
++        `RV32_FUNCT3_ADD_SUB : alu_op_arith = `ALU_OP_SLL;
+         `RV32_FUNCT3_SLL : alu_op_arith = `ALU_OP_SLL;
+         `RV32_FUNCT3_SLT : alu_op_arith = `ALU_OP_SLT;
+         `RV32_FUNCT3_SLTU : alu_op_arith = `ALU_OP_SLTU;
+@@ -212,7 +212,7 @@ module decoder(
+ 		       (funct3 == `RV32_FUNCT3_MULHSU) ||
+ 		       (funct3 == `RV32_FUNCT3_MULHU)
+ 		       ) ? `RS_ENT_MUL : `RS_ENT_DIV;
+-   
++
+    always @(*) begin
+       md_req_op = `MD_OP_MUL;
+       md_req_in_1_signed = 0;
+@@ -254,6 +254,6 @@ module decoder(
+       endcase
+    end
+ 
+-   
++
+ endmodule // decoder
+ `default_nettype wire
+  Running CoSA --problems cosa/tmpfilebmctest-8193.txt
+Parsing file "cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		1.5 time, 180.8 real, 119.8 MB
+[runlim] sample:		11.5 time, 190.8 real, 193.1 MB
+[runlim] sample:		21.5 time, 200.8 real, 193.1 MB
+DONE
+Parsing file "cosa/reset_procedure.ets"... DONE
+Parsing file "cosa/init.ssts"... DONE
+Parsing file "cosa/state_copy.ssts"... DONE
+Parsing file "cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for ADD" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		5.9 time, 210.8 real, 261.1 MB
+_[runlim] sample:		15.8 time, 220.8 real, 526.5 MB
+___[runlim] sample:		25.9 time, 230.8 real, 686.4 MB
+__[runlim] sample:		35.9 time, 240.8 real, 827.7 MB
+__[runlim] sample:		45.9 time, 250.8 real, 1030.4 MB
+__[runlim] sample:		55.9 time, 260.8 real, 1226.9 MB
+_[runlim] sample:		65.8 time, 270.8 real, 1431.6 MB
+__[runlim] sample:		75.8 time, 280.8 real, 1622.7 MB
+_[runlim] sample:		85.8 time, 290.8 real, 1798.0 MB
+__[runlim] sample:		95.8 time, 300.8 real, 1924.6 MB
+_[runlim] sample:		105.8 time, 310.8 real, 2108.4 MB
+_[runlim] sample:		115.8 time, 320.8 real, 2130.8 MB
+_[runlim] sample:		125.8 time, 330.8 real, 2238.3 MB
+_.[runlim] sample:		135.8 time, 340.8 real, 2404.0 MB
+.[runlim] sample:		145.8 time, 350.8 real, 2665.1 MB
+[runlim] sample:		155.8 time, 360.8 real, 2730.4 MB
+ FALSE
+
+*** SUMMARY ***
+
+** Problem Single Instruction for ADD **
+Description: "Check for Single Instruction"
+Result: FALSE
+Counterexample:
+---> INIT <---
+  I: clk = 0_1
+  I: instruction = 2155872383_32
+  I: rd_copy = 0_5
+  I: reset_done = False
+  I: reset_x = 0_1
+  I: state_counter = 0_10
+  I: val1 = 0_32
+  I: val2 = 0_32
+  I: pipe.aregfile.regfile.mem = Array{BV{5}, BV{32}}(0_32)[12_5 := 3221225472_32][26_5 := 1073741824_32][4_5 := 2147483648_32][5_5 := 1073741824_32][6_5 := 536870912_32][8_5 := 134217728_32][9_5 := 1073741824_32]
+
+---> STATE 1 <---
+  S1: clk = 1_1
+  S1: instruction = 2147483775_32
+  S1: state_counter = 1_10
+  S1: val1 = 537001984_32
+  S1: val2 = 2149580800_32
+
+---> STATE 2 <---
+  S2: clk = 0_1
+  S2: instruction = 536871039_32
+  S2: state_counter = 2_10
+  S2: val1 = 1073741824_32
+  S2: val2 = 67108864_32
+
+---> STATE 3 <---
+  S3: clk = 1_1
+  S3: instruction = 268435583_32
+  S3: state_counter = 3_10
+  S3: val1 = 268435456_32
+  S3: val2 = 2147483648_32
+
+---> STATE 4 <---
+  S4: clk = 0_1
+  S4: instruction = 2147483775_32
+  S4: state_counter = 4_10
+  S4: val1 = 1073741824_32
+  S4: val2 = 134217728_32
+
+---> STATE 5 <---
+  S5: clk = 1_1
+  S5: instruction = 1082130559_32
+  S5: state_counter = 5_10
+  S5: val1 = 33554432_32
+  S5: val2 = 268435456_32
+
+---> STATE 6 <---
+  S6: clk = 0_1
+  S6: instruction = 1073742867_32
+  S6: state_counter = 6_10
+  S6: val1 = 1073741824_32
+  S6: val2 = 1073741824_32
+
+---> STATE 7 <---
+  S7: clk = 1_1
+  S7: instruction = 5442867_32
+  S7: reset_done = True
+  S7: reset_x = 1_1
+  S7: state_counter = 7_10
+  S7: val1 = 0_32
+  S7: val2 = 0_32
+
+---> STATE 8 <---
+  S8: clk = 0_1
+  S8: rd_copy = 26_5
+  S8: state_counter = 8_10
+  S8: val1 = 1073741824_32
+  S8: val2 = 1073741824_32
+
+---> STATE 9 <---
+  S9: clk = 1_1
+  S9: state_counter = 9_10
+  S9: val1 = 2147483648_32
+  S9: val2 = 134217728_32
+
+---> STATE 10 <---
+  S10: clk = 0_1
+  S10: state_counter = 10_10
+  S10: val1 = 1073741824_32
+  S10: val2 = 67108864_32
+
+---> STATE 11 <---
+  S11: clk = 1_1
+  S11: instruction = 131199_32
+  S11: state_counter = 11_10
+  S11: val1 = 536870912_32
+  S11: val2 = 1073741828_32
+
+---> STATE 12 <---
+  S12: clk = 0_1
+  S12: instruction = 4269934719_32
+  S12: state_counter = 12_10
+  S12: val1 = 1073741824_32
+  S12: val2 = 1073741824_32
+
+---> STATE 13 <---
+  S13: clk = 1_1
+  S13: instruction = 18874495_32
+  S13: state_counter = 13_10
+  S13: val1 = 536870914_32
+  S13: val2 = 134217728_32
+
+---> STATE 14 <---
+  S14: clk = 0_1
+  S14: instruction = 2157084799_32
+  S14: state_counter = 14_10
+  S14: val1 = 1073741824_32
+  S14: val2 = 1073741824_32
+
+---> STATE 15 <---
+  S15: clk = 1_1
+  S15: instruction = 16777343_32
+  S15: state_counter = 15_10
+  S15: val1 = 536870944_32
+  S15: val2 = 268435456_32
+
+---> STATE 16 <---
+  S16: clk = 0_1
+  S16: instruction = 4261412991_32
+  S16: state_counter = 16_10
+  S16: val1 = 1073741824_32
+  S16: val2 = 1207959552_32
+
+---> STATE 17 <---
+  S17: clk = 1_1
+  S17: instruction = 1048703_32
+  S17: state_counter = 17_10
+  S17: val1 = 268435456_32
+  S17: val2 = 1073741824_32
+
+---> STATE 18 <---
+  S18: clk = 0_1
+  S18: instruction = 1409151_32
+  S18: state_counter = 18_10
+  S18: val1 = 8388608_32
+  S18: val2 = 2147483648_32
+
+---> STATE 19 <---
+  S19: clk = 1_1
+  S19: instruction = 1073742975_32
+  S19: state_counter = 19_10
+  S19: val1 = 1140850688_32
+  S19: val2 = 1644167168_32
+
+---> STATE 20 <---
+  S20: clk = 0_1
+  S20: instruction = 8388735_32
+  S20: state_counter = 20_10
+  S20: val1 = 536870912_32
+  S20: val2 = 1073741824_32
+
+---> STATE 21 <---
+  S21: clk = 1_1
+  S21: instruction = 127_32
+  S21: state_counter = 21_10
+
+---> STATE 22 <---
+  S22: clk = 0_1
+  S22: instruction = 268435583_32
+  S22: state_counter = 22_10
+  S22: pipe.aregfile.regfile.mem = Array{BV{5}, BV{32}}(0_32)[12_5 := 3221225472_32][26_5 := 536870912_32][4_5 := 2147483648_32][5_5 := 1073741824_32][6_5 := 536870912_32][8_5 := 134217728_32][9_5 := 1073741824_32]
+Counterexamples: [1], [2]
+Traces (max) length: 23
+
+*** TRACES ***
+
+[1]:	trace[1]-Single Instruction for ADD.vcd
+  Test for ADD using testing-workflow/bug-injection-patches-ADD/alu-bug-injected_2_ADD.patch succeeded, CoSA found a counterexample as expected.
+
+Cleaning up temporary files.
+  cleanup: resetting any local changes
+HEAD is now at c9ef8a8 added files for demo
+[runlim] end:			Mon Apr  8 22:54:57 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		8381
+[runlim] real:			369.75 seconds
+[runlim] time:			164.59 seconds
+[runlim] space:			2813.4 MB
+[runlim] samples:		3689
