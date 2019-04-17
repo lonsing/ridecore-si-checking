@@ -1,0 +1,1833 @@
+property file: ./cosa/single_property_ORI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_ORI.txt
+[runlim] start:			Tue Apr 16 18:01:47 2019
+[runlim] main pid:		17723
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.3 real, 198.1 MB
+[runlim] sample:		0.8 time, 20.3 real, 62.3 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction For ORI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.7 time, 30.3 real, 456.3 MB
+___[runlim] sample:		20.7 time, 40.3 real, 631.4 MB
+__[runlim] sample:		30.7 time, 50.3 real, 855.2 MB
+__[runlim] sample:		40.7 time, 60.3 real, 1007.7 MB
+___[runlim] sample:		50.7 time, 70.3 real, 1244.1 MB
+_[runlim] sample:		60.7 time, 80.3 real, 1437.4 MB
+__[runlim] sample:		70.7 time, 90.3 real, 1612.3 MB
+__[runlim] sample:		80.7 time, 100.3 real, 1847.2 MB
+_[runlim] sample:		90.7 time, 110.3 real, 2044.3 MB
+_[runlim] sample:		100.7 time, 120.3 real, 2088.4 MB
+_[runlim] sample:		110.7 time, 130.3 real, 2206.7 MB
+_[runlim] sample:		120.7 time, 140.3 real, 2323.1 MB
+_..[runlim] sample:		130.7 time, 150.3 real, 2524.8 MB
+...[runlim] sample:		140.7 time, 160.3 real, 3008.8 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction For ORI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.7 time, 170.3 real, 3415.7 MB
+[runlim] end:			Tue Apr 16 18:04:43 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		384
+[runlim] real:			176.76 seconds
+[runlim] time:			157.09 seconds
+[runlim] space:			3415.7 MB
+[runlim] samples:		1764
+property file: ./cosa/single_property_MUL_V2.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_MUL_V2.txt
+[runlim] start:			Tue Apr 16 18:04:43 2019
+[runlim] main pid:		17782
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.8 real, 198.4 MB
+[runlim] sample:		0.6 time, 20.8 real, 57.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for MUL_V2" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.6 time, 30.8 real, 474.5 MB
+__[runlim] sample:		20.6 time, 40.8 real, 697.2 MB
+___[runlim] sample:		30.6 time, 50.8 real, 886.8 MB
+__[runlim] sample:		40.6 time, 60.8 real, 1071.5 MB
+__[runlim] sample:		50.6 time, 70.8 real, 1285.7 MB
+__[runlim] sample:		60.6 time, 80.8 real, 1486.5 MB
+_[runlim] sample:		70.6 time, 90.8 real, 1733.6 MB
+__[runlim] sample:		80.6 time, 100.8 real, 1824.4 MB
+_[runlim] sample:		90.6 time, 110.8 real, 2007.2 MB
+_[runlim] sample:		100.6 time, 120.8 real, 2058.7 MB
+_[runlim] sample:		110.6 time, 130.8 real, 2158.3 MB
+_[runlim] sample:		120.6 time, 140.8 real, 2284.9 MB
+_..[runlim] sample:		130.6 time, 150.8 real, 2513.4 MB
+..[runlim] sample:		140.6 time, 160.8 real, 2729.4 MB
+...[runlim] sample:		150.6 time, 170.8 real, 3253.7 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for MUL_V2 **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		160.6 time, 180.8 real, 2535.3 MB
+[runlim] end:			Tue Apr 16 18:07:45 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		388
+[runlim] real:			182.44 seconds
+[runlim] time:			162.17 seconds
+[runlim] space:			3400.7 MB
+[runlim] samples:		1816
+property file: ./cosa/single_property_BEQ.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BEQ.txt
+[runlim] start:			Tue Apr 16 18:07:45 2019
+[runlim] main pid:		17860
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.1 MB
+[runlim] sample:		20.0 time, 20.4 real, 279.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BEQ" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.8 time, 30.4 real, 451.8 MB
+___[runlim] sample:		19.8 time, 40.4 real, 634.2 MB
+__[runlim] sample:		29.8 time, 50.5 real, 846.9 MB
+___[runlim] sample:		39.8 time, 60.5 real, 1039.6 MB
+__[runlim] sample:		49.8 time, 70.4 real, 1209.6 MB
+__[runlim] sample:		59.8 time, 80.5 real, 1463.0 MB
+__[runlim] sample:		69.8 time, 90.4 real, 1640.5 MB
+_[runlim] sample:		79.8 time, 100.4 real, 1877.0 MB
+_[runlim] sample:		89.8 time, 110.4 real, 2043.7 MB
+_[runlim] sample:		99.8 time, 120.5 real, 2072.4 MB
+_..[runlim] sample:		109.8 time, 130.4 real, 2255.4 MB
+...[runlim] sample:		119.8 time, 140.4 real, 2677.5 MB
+...[runlim] sample:		129.8 time, 150.4 real, 3157.8 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BEQ **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		139.8 time, 160.4 real, 3379.7 MB
+[runlim] end:			Tue Apr 16 18:10:30 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		404
+[runlim] real:			165.67 seconds
+[runlim] time:			144.97 seconds
+[runlim] space:			3580.4 MB
+[runlim] samples:		1652
+property file: ./cosa/single_property_SRL.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SRL.txt
+[runlim] start:			Tue Apr 16 18:10:30 2019
+[runlim] main pid:		17916
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.7 real, 198.3 MB
+[runlim] sample:		20.0 time, 20.7 real, 279.2 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SRL" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.7 time, 30.7 real, 364.4 MB
+___[runlim] sample:		19.8 time, 40.7 real, 620.9 MB
+__[runlim] sample:		29.7 time, 50.7 real, 789.9 MB
+__[runlim] sample:		39.7 time, 60.7 real, 1012.1 MB
+___[runlim] sample:		49.7 time, 70.7 real, 1233.4 MB
+__[runlim] sample:		59.7 time, 80.7 real, 1453.6 MB
+_[runlim] sample:		69.7 time, 90.7 real, 1613.2 MB
+__[runlim] sample:		79.7 time, 100.7 real, 1862.7 MB
+_[runlim] sample:		89.7 time, 110.7 real, 2045.0 MB
+__[runlim] sample:		99.7 time, 120.7 real, 2136.1 MB
+_[runlim] sample:		109.7 time, 130.7 real, 2271.6 MB
+[runlim] sample:		119.7 time, 140.7 real, 2290.5 MB
+_..[runlim] sample:		129.7 time, 150.7 real, 2492.6 MB
+...[runlim] sample:		139.7 time, 160.7 real, 2839.9 MB
+..[runlim] sample:		149.7 time, 170.7 real, 3392.5 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SRL **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		159.7 time, 180.7 real, 2517.0 MB
+[runlim] end:			Tue Apr 16 18:13:31 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		406
+[runlim] real:			181.18 seconds
+[runlim] time:			160.19 seconds
+[runlim] space:			3421.7 MB
+[runlim] samples:		1805
+property file: ./cosa/single_property_SLLI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLLI.txt
+[runlim] start:			Tue Apr 16 18:13:31 2019
+[runlim] main pid:		17956
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 198.1 MB
+[runlim] sample:		20.0 time, 20.2 real, 279.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLLI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.8 time, 30.2 real, 452.4 MB
+___[runlim] sample:		19.8 time, 40.2 real, 634.8 MB
+__[runlim] sample:		29.8 time, 50.2 real, 855.6 MB
+___[runlim] sample:		39.8 time, 60.2 real, 1026.5 MB
+__[runlim] sample:		49.8 time, 70.2 real, 1251.6 MB
+__[runlim] sample:		59.8 time, 80.2 real, 1468.0 MB
+__[runlim] sample:		69.8 time, 90.2 real, 1632.7 MB
+_[runlim] sample:		79.8 time, 100.2 real, 1881.0 MB
+_[runlim] sample:		89.8 time, 110.2 real, 2045.5 MB
+__[runlim] sample:		99.8 time, 120.2 real, 2142.2 MB
+_[runlim] sample:		109.8 time, 130.2 real, 2240.9 MB
+_.[runlim] sample:		119.8 time, 140.2 real, 2297.4 MB
+..[runlim] sample:		129.8 time, 150.2 real, 2587.5 MB
+...[runlim] sample:		139.8 time, 160.2 real, 3125.9 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLLI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		149.8 time, 170.2 real, 3440.6 MB
+[runlim] end:			Tue Apr 16 18:16:27 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		404
+[runlim] real:			176.86 seconds
+[runlim] time:			156.37 seconds
+[runlim] space:			3468.0 MB
+[runlim] samples:		1766
+property file: ./cosa/single_property_AND.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_AND.txt
+[runlim] start:			Tue Apr 16 18:16:27 2019
+[runlim] main pid:		17990
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.9 real, 197.8 MB
+[runlim] sample:		20.0 time, 20.9 real, 278.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for AND" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.7 time, 30.9 real, 410.7 MB
+___[runlim] sample:		19.7 time, 40.9 real, 633.7 MB
+__[runlim] sample:		29.7 time, 50.9 real, 809.2 MB
+___[runlim] sample:		39.7 time, 60.9 real, 1027.4 MB
+__[runlim] sample:		49.7 time, 70.9 real, 1248.7 MB
+__[runlim] sample:		59.6 time, 80.9 real, 1469.3 MB
+__[runlim] sample:		69.6 time, 90.9 real, 1635.4 MB
+_[runlim] sample:		79.6 time, 100.9 real, 1878.8 MB
+__[runlim] sample:		89.6 time, 110.9 real, 2060.4 MB
+_[runlim] sample:		99.6 time, 120.9 real, 2173.4 MB
+_[runlim] sample:		109.6 time, 130.9 real, 2276.7 MB
+_..[runlim] sample:		119.6 time, 140.9 real, 2452.6 MB
+..[runlim] sample:		129.6 time, 150.9 real, 2814.3 MB
+...[runlim] sample:		139.6 time, 160.9 real, 3304.8 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for AND **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		149.6 time, 170.9 real, 2527.6 MB
+[runlim] end:			Tue Apr 16 18:19:19 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		406
+[runlim] real:			172.22 seconds
+[runlim] time:			150.91 seconds
+[runlim] space:			3473.7 MB
+[runlim] samples:		1713
+property file: ./cosa/single_property_MUL_V1.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_MUL_V1.txt
+[runlim] start:			Tue Apr 16 18:19:19 2019
+[runlim] main pid:		18026
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 198.2 MB
+[runlim] sample:		20.0 time, 20.2 real, 275.6 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for MUL_V1" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.2 time, 30.2 real, 364.5 MB
+__[runlim] sample:		19.2 time, 40.2 real, 595.2 MB
+___[runlim] sample:		29.2 time, 50.2 real, 773.6 MB
+__[runlim] sample:		39.2 time, 60.2 real, 975.6 MB
+__[runlim] sample:		49.2 time, 70.2 real, 1188.3 MB
+__[runlim] sample:		59.2 time, 80.2 real, 1456.0 MB
+__[runlim] sample:		69.2 time, 90.2 real, 1645.8 MB
+_[runlim] sample:		79.2 time, 100.2 real, 1785.4 MB
+__[runlim] sample:		89.2 time, 110.2 real, 1966.6 MB
+_[runlim] sample:		99.2 time, 120.2 real, 2088.1 MB
+_[runlim] sample:		109.2 time, 130.2 real, 2179.9 MB
+_[runlim] sample:		119.2 time, 140.2 real, 2286.0 MB
+_..[runlim] sample:		129.2 time, 150.2 real, 2599.6 MB
+..[runlim] sample:		139.2 time, 160.2 real, 2819.1 MB
+...[runlim] sample:		149.2 time, 170.2 real, 3277.3 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for MUL_V1 **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		159.2 time, 180.2 real, 2518.4 MB
+[runlim] end:			Tue Apr 16 18:22:21 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		414
+[runlim] real:			182.83 seconds
+[runlim] time:			161.75 seconds
+[runlim] space:			3400.5 MB
+[runlim] samples:		1826
+property file: ./cosa/single_property_BLTU.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BLTU.txt
+[runlim] start:			Tue Apr 16 18:22:21 2019
+[runlim] main pid:		18056
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.8 real, 198.3 MB
+[runlim] sample:		0.5 time, 20.8 real, 53.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BLTU" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.5 time, 30.8 real, 474.1 MB
+__[runlim] sample:		20.4 time, 40.8 real, 697.3 MB
+___[runlim] sample:		30.4 time, 50.8 real, 862.6 MB
+__[runlim] sample:		40.4 time, 60.8 real, 1049.3 MB
+__[runlim] sample:		50.4 time, 70.8 real, 1326.5 MB
+__[runlim] sample:		60.4 time, 80.8 real, 1543.8 MB
+__[runlim] sample:		70.4 time, 90.8 real, 1633.2 MB
+_[runlim] sample:		80.4 time, 100.8 real, 1873.1 MB
+__[runlim] sample:		90.4 time, 110.8 real, 2145.6 MB
+_..[runlim] sample:		100.4 time, 120.8 real, 2174.6 MB
+.[runlim] sample:		110.4 time, 130.8 real, 2326.1 MB
+...[runlim] sample:		120.4 time, 140.8 real, 3011.6 MB
+...[runlim] sample:		130.4 time, 150.8 real, 3434.8 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BLTU **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		140.4 time, 160.8 real, 2526.8 MB
+[runlim] end:			Tue Apr 16 18:25:02 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		390
+[runlim] real:			161.42 seconds
+[runlim] time:			140.90 seconds
+[runlim] space:			3603.9 MB
+[runlim] samples:		1605
+property file: ./cosa/single_property_SRLI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SRLI.txt
+[runlim] start:			Tue Apr 16 18:25:02 2019
+[runlim] main pid:		18092
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.3 MB
+[runlim] sample:		0.8 time, 20.4 real, 63.6 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SRLI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.8 time, 30.4 real, 478.1 MB
+__[runlim] sample:		20.8 time, 40.4 real, 689.8 MB
+___[runlim] sample:		30.8 time, 50.4 real, 892.7 MB
+__[runlim] sample:		40.8 time, 60.4 real, 1071.8 MB
+___[runlim] sample:		50.8 time, 70.4 real, 1328.6 MB
+_[runlim] sample:		60.8 time, 80.4 real, 1521.3 MB
+__[runlim] sample:		70.8 time, 90.4 real, 1803.2 MB
+_[runlim] sample:		80.8 time, 100.4 real, 1926.2 MB
+__[runlim] sample:		90.8 time, 110.4 real, 2053.7 MB
+_[runlim] sample:		100.8 time, 120.4 real, 2188.1 MB
+_[runlim] sample:		110.8 time, 130.4 real, 2352.9 MB
+_.[runlim] sample:		120.8 time, 140.4 real, 2297.4 MB
+.[runlim] sample:		130.8 time, 150.4 real, 2582.8 MB
+...[runlim] sample:		140.8 time, 160.4 real, 2965.3 MB
+...[runlim] sample:		150.8 time, 170.4 real, 3425.2 MB
+ UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SRLI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] end:			Tue Apr 16 18:27:59 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		382
+[runlim] real:			177.40 seconds
+[runlim] time:			157.67 seconds
+[runlim] space:			3439.9 MB
+[runlim] samples:		1769
+property file: ./cosa/single_property_JALR.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_JALR.txt
+[runlim] start:			Tue Apr 16 18:27:59 2019
+[runlim] main pid:		18139
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		9.9 time, 10.4 real, 198.2 MB
+[runlim] sample:		0.9 time, 20.4 real, 63.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for JALR" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.8 time, 30.4 real, 478.9 MB
+__[runlim] sample:		20.9 time, 40.4 real, 677.6 MB
+___[runlim] sample:		30.8 time, 50.4 real, 907.6 MB
+__[runlim] sample:		40.8 time, 60.4 real, 1080.1 MB
+__[runlim] sample:		50.8 time, 70.4 real, 1323.1 MB
+__[runlim] sample:		60.8 time, 80.4 real, 1504.2 MB
+__[runlim] sample:		70.8 time, 90.4 real, 1839.8 MB
+_[runlim] sample:		80.8 time, 100.4 real, 1934.6 MB
+__[runlim] sample:		90.8 time, 110.4 real, 2048.0 MB
+_[runlim] sample:		100.8 time, 120.4 real, 2160.6 MB
+_[runlim] sample:		110.8 time, 130.4 real, 2355.1 MB
+_..[runlim] sample:		120.8 time, 140.4 real, 2442.7 MB
+...[runlim] sample:		130.8 time, 150.4 real, 3077.8 MB
+..[runlim] sample:		140.8 time, 160.4 real, 3426.6 MB
+. UNKNOWN
+Solving "Single Instruction for JALRRD" [runlim] sample:		150.8 time, 170.4 real, 3974.1 MB
+____[runlim] sample:		160.8 time, 180.4 real, 4065.8 MB
+___[runlim] sample:		170.8 time, 190.4 real, 4295.6 MB
+__[runlim] sample:		180.8 time, 200.4 real, 4464.0 MB
+_[runlim] sample:		190.8 time, 210.4 real, 3362.5 MB
+___[runlim] sample:		200.8 time, 220.4 real, 3371.0 MB
+_[runlim] sample:		210.8 time, 230.4 real, 3427.9 MB
+__[runlim] sample:		220.8 time, 240.4 real, 3444.1 MB
+_[runlim] sample:		230.8 time, 250.4 real, 3479.5 MB
+__[runlim] sample:		240.8 time, 260.4 real, 3468.6 MB
+_.[runlim] sample:		250.7 time, 270.4 real, 3516.4 MB
+..[runlim] sample:		260.7 time, 280.4 real, 3501.3 MB
+...[runlim] sample:		270.7 time, 290.4 real, 3651.2 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for JALR **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+
+** Problem Single Instruction for JALRRD **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		280.7 time, 300.4 real, 3087.0 MB
+[runlim] end:			Tue Apr 16 18:33:02 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		382
+[runlim] real:			303.01 seconds
+[runlim] time:			283.33 seconds
+[runlim] space:			4491.7 MB
+[runlim] samples:		3026
+property file: ./cosa/single_property_MUL_V3.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_MUL_V3.txt
+[runlim] start:			Tue Apr 16 18:33:02 2019
+[runlim] main pid:		18197
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.0 real, 198.1 MB
+[runlim] sample:		0.9 time, 20.0 real, 63.5 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for MUL_V3" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.9 time, 30.0 real, 479.0 MB
+__[runlim] sample:		20.9 time, 40.0 real, 688.2 MB
+___[runlim] sample:		30.9 time, 50.0 real, 875.0 MB
+__[runlim] sample:		40.9 time, 60.0 real, 1091.4 MB
+__[runlim] sample:		50.9 time, 70.0 real, 1334.6 MB
+__[runlim] sample:		60.8 time, 80.0 real, 1566.2 MB
+__[runlim] sample:		70.8 time, 90.0 real, 1811.2 MB
+_[runlim] sample:		80.8 time, 100.0 real, 1874.9 MB
+__[runlim] sample:		90.8 time, 110.0 real, 2156.8 MB
+_[runlim] sample:		100.8 time, 120.0 real, 2258.3 MB
+_[runlim] sample:		110.8 time, 130.0 real, 2291.0 MB
+_..[runlim] sample:		120.8 time, 140.0 real, 2451.2 MB
+..[runlim] sample:		130.8 time, 150.0 real, 2741.6 MB
+...[runlim] sample:		140.8 time, 160.0 real, 3275.1 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for MUL_V3 **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.8 time, 170.0 real, 2574.1 MB
+[runlim] end:			Tue Apr 16 18:35:53 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		382
+[runlim] real:			171.07 seconds
+[runlim] time:			151.79 seconds
+[runlim] space:			3449.9 MB
+[runlim] samples:		1710
+property file: ./cosa/single_property_AUIPC.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_AUIPC.txt
+[runlim] start:			Tue Apr 16 18:35:53 2019
+[runlim] main pid:		18266
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.1 real, 197.9 MB
+[runlim] sample:		1.0 time, 20.1 real, 69.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for AUIPC" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		11.0 time, 30.1 real, 481.5 MB
+__[runlim] sample:		21.0 time, 40.1 real, 687.9 MB
+___[runlim] sample:		31.0 time, 50.1 real, 870.6 MB
+___[runlim] sample:		41.0 time, 60.1 real, 1102.2 MB
+_[runlim] sample:		51.0 time, 70.1 real, 1338.1 MB
+__[runlim] sample:		61.0 time, 80.1 real, 1539.9 MB
+__[runlim] sample:		71.0 time, 90.1 real, 1769.4 MB
+_[runlim] sample:		81.0 time, 100.1 real, 1879.6 MB
+_[runlim] sample:		91.0 time, 110.1 real, 2094.2 MB
+_[runlim] sample:		101.0 time, 120.1 real, 2103.0 MB
+_...[runlim] sample:		111.0 time, 130.1 real, 2384.6 MB
+..[runlim] sample:		121.0 time, 140.1 real, 2557.8 MB
+..[runlim] sample:		130.9 time, 150.1 real, 3104.7 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for AUIPC **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		140.9 time, 160.1 real, 3455.6 MB
+[runlim] end:			Tue Apr 16 18:38:39 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		380
+[runlim] real:			166.16 seconds
+[runlim] time:			146.93 seconds
+[runlim] space:			3455.6 MB
+[runlim] samples:		1660
+property file: ./cosa/single_property_SLL.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLL.txt
+[runlim] start:			Tue Apr 16 18:38:39 2019
+[runlim] main pid:		18296
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 198.5 MB
+[runlim] sample:		0.8 time, 20.2 real, 63.6 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLL" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.8 time, 30.2 real, 472.3 MB
+___[runlim] sample:		20.8 time, 40.2 real, 669.7 MB
+___[runlim] sample:		30.8 time, 50.2 real, 823.5 MB
+__[runlim] sample:		40.8 time, 60.2 real, 1048.5 MB
+__[runlim] sample:		50.8 time, 70.2 real, 1332.0 MB
+__[runlim] sample:		60.8 time, 80.2 real, 1547.8 MB
+__[runlim] sample:		70.8 time, 90.2 real, 1763.5 MB
+_[runlim] sample:		80.8 time, 100.2 real, 1873.0 MB
+__[runlim] sample:		90.8 time, 110.2 real, 2088.4 MB
+_[runlim] sample:		100.8 time, 120.2 real, 2115.2 MB
+_[runlim] sample:		110.8 time, 130.2 real, 2244.5 MB
+_.[runlim] sample:		120.8 time, 140.2 real, 2293.3 MB
+.[runlim] sample:		130.8 time, 150.2 real, 2523.3 MB
+...[runlim] sample:		140.8 time, 160.2 real, 2936.3 MB
+...[runlim] sample:		150.8 time, 170.2 real, 3356.7 MB
+ UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLL **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] end:			Tue Apr 16 18:41:37 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		382
+[runlim] real:			178.05 seconds
+[runlim] time:			158.54 seconds
+[runlim] space:			3407.5 MB
+[runlim] samples:		1778
+property file: ./cosa/single_property_ANDI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_ANDI.txt
+[runlim] start:			Tue Apr 16 18:41:37 2019
+[runlim] main pid:		18324
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.1 real, 198.3 MB
+[runlim] sample:		0.6 time, 20.1 real, 58.0 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for ANDI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.6 time, 30.1 real, 505.7 MB
+___[runlim] sample:		20.6 time, 40.1 real, 633.1 MB
+__[runlim] sample:		30.6 time, 50.1 real, 803.1 MB
+___[runlim] sample:		40.6 time, 60.1 real, 987.7 MB
+__[runlim] sample:		50.6 time, 70.1 real, 1276.6 MB
+__[runlim] sample:		60.6 time, 80.1 real, 1464.4 MB
+__[runlim] sample:		70.6 time, 90.1 real, 1636.0 MB
+_[runlim] sample:		80.6 time, 100.1 real, 1840.0 MB
+_[runlim] sample:		90.6 time, 110.1 real, 2036.0 MB
+_[runlim] sample:		100.6 time, 120.1 real, 2085.1 MB
+__[runlim] sample:		110.6 time, 130.1 real, 2239.6 MB
+_.[runlim] sample:		120.6 time, 140.1 real, 2292.5 MB
+..[runlim] sample:		130.6 time, 150.1 real, 2510.9 MB
+..[runlim] sample:		140.6 time, 160.1 real, 3138.5 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for ANDI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.6 time, 170.1 real, 3412.0 MB
+[runlim] end:			Tue Apr 16 18:44:32 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		388
+[runlim] real:			175.95 seconds
+[runlim] time:			156.35 seconds
+[runlim] space:			3417.6 MB
+[runlim] samples:		1758
+property file: ./cosa/single_property_SUB.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SUB.txt
+[runlim] start:			Tue Apr 16 18:44:32 2019
+[runlim] main pid:		18361
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 11.0 real, 198.3 MB
+[runlim] sample:		0.3 time, 21.0 real, 49.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SUB" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.3 time, 31.0 real, 530.4 MB
+___[runlim] sample:		20.3 time, 41.0 real, 634.8 MB
+___[runlim] sample:		30.3 time, 51.0 real, 814.6 MB
+__[runlim] sample:		40.3 time, 61.0 real, 1024.2 MB
+__[runlim] sample:		50.3 time, 71.0 real, 1247.7 MB
+__[runlim] sample:		60.3 time, 81.0 real, 1472.4 MB
+__[runlim] sample:		70.3 time, 91.0 real, 1648.4 MB
+_[runlim] sample:		80.3 time, 101.0 real, 1879.3 MB
+_[runlim] sample:		90.3 time, 111.0 real, 2043.7 MB
+__[runlim] sample:		100.2 time, 121.0 real, 2117.6 MB
+_[runlim] sample:		110.2 time, 131.0 real, 2258.8 MB
+_.[runlim] sample:		120.2 time, 141.0 real, 2350.9 MB
+..[runlim] sample:		130.2 time, 151.0 real, 2608.9 MB
+...[runlim] sample:		140.2 time, 161.0 real, 3156.7 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SUB **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.2 time, 171.0 real, 3231.5 MB
+[runlim] end:			Tue Apr 16 18:47:26 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		392
+[runlim] real:			174.20 seconds
+[runlim] time:			153.42 seconds
+[runlim] space:			3416.3 MB
+[runlim] samples:		1732
+property file: ./cosa/single_property_MUL_V4.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_MUL_V4.txt
+[runlim] start:			Tue Apr 16 18:47:26 2019
+[runlim] main pid:		18390
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 198.3 MB
+[runlim] sample:		20.0 time, 20.2 real, 42.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for MUL_V4" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.3 time, 30.2 real, 474.5 MB
+___[runlim] sample:		20.3 time, 40.2 real, 638.2 MB
+__[runlim] sample:		30.3 time, 50.2 real, 856.4 MB
+___[runlim] sample:		40.3 time, 60.2 real, 1040.3 MB
+__[runlim] sample:		50.3 time, 70.2 real, 1220.9 MB
+__[runlim] sample:		60.3 time, 80.2 real, 1461.2 MB
+_[runlim] sample:		70.2 time, 90.2 real, 1611.9 MB
+__[runlim] sample:		80.2 time, 100.2 real, 1862.7 MB
+_[runlim] sample:		90.2 time, 110.2 real, 2040.1 MB
+_[runlim] sample:		100.2 time, 120.2 real, 2131.7 MB
+__[runlim] sample:		110.2 time, 130.2 real, 2343.0 MB
+_.[runlim] sample:		120.2 time, 140.2 real, 2298.8 MB
+..[runlim] sample:		130.2 time, 150.2 real, 2641.0 MB
+...[runlim] sample:		140.2 time, 160.2 real, 3116.4 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for MUL_V4 **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.2 time, 170.2 real, 3242.7 MB
+[runlim] end:			Tue Apr 16 18:50:20 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		396
+[runlim] real:			174.94 seconds
+[runlim] time:			154.92 seconds
+[runlim] space:			3441.5 MB
+[runlim] samples:		1747
+property file: ./cosa/single_property_JAL.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_JAL.txt
+[runlim] start:			Tue Apr 16 18:50:20 2019
+[runlim] main pid:		18425
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.9 real, 198.3 MB
+[runlim] sample:		20.0 time, 20.9 real, 280.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for JALPC" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.1 time, 30.9 real, 473.5 MB
+___[runlim] sample:		20.1 time, 40.9 real, 634.5 MB
+___[runlim] sample:		30.1 time, 50.9 real, 891.8 MB
+__[runlim] sample:		40.1 time, 60.9 real, 1100.7 MB
+__[runlim] sample:		50.1 time, 70.9 real, 1333.5 MB
+__[runlim] sample:		60.1 time, 80.9 real, 1490.9 MB
+__[runlim] sample:		70.1 time, 90.9 real, 1683.7 MB
+_[runlim] sample:		80.1 time, 100.9 real, 1927.5 MB
+__[runlim] sample:		90.1 time, 110.9 real, 2062.8 MB
+_..[runlim] sample:		100.1 time, 120.9 real, 2377.2 MB
+...[runlim] sample:		110.1 time, 130.9 real, 2645.0 MB
+...[runlim] sample:		120.1 time, 140.9 real, 3166.5 MB
+.. UNKNOWN
+Solving "Single Instruction for JALRD" [runlim] sample:		130.1 time, 150.9 real, 3623.6 MB
+__[runlim] sample:		140.1 time, 160.9 real, 3840.7 MB
+___[runlim] sample:		150.1 time, 170.9 real, 4022.5 MB
+___[runlim] sample:		160.1 time, 180.9 real, 4258.8 MB
+__[runlim] sample:		170.1 time, 190.9 real, 4428.9 MB
+_[runlim] sample:		180.1 time, 200.9 real, 3472.9 MB
+___[runlim] sample:		190.1 time, 210.9 real, 3485.3 MB
+_[runlim] sample:		200.0 time, 220.9 real, 3547.3 MB
+__[runlim] sample:		210.0 time, 230.9 real, 3533.4 MB
+_..[runlim] sample:		220.0 time, 240.9 real, 3617.5 MB
+..[runlim] sample:		230.0 time, 250.9 real, 3553.0 MB
+...[runlim] sample:		240.0 time, 260.9 real, 3649.1 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for JALPC **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+
+** Problem Single Instruction for JALRD **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		250.0 time, 270.9 real, 3652.3 MB
+[runlim] end:			Tue Apr 16 18:54:54 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		396
+[runlim] real:			274.86 seconds
+[runlim] time:			253.92 seconds
+[runlim] space:			4473.1 MB
+[runlim] samples:		2739
+property file: ./cosa/single_property_XOR.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_XOR.txt
+[runlim] start:			Tue Apr 16 18:54:54 2019
+[runlim] main pid:		18475
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.9 real, 198.1 MB
+[runlim] sample:		0.8 time, 20.9 real, 62.5 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for XOR" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.8 time, 30.9 real, 475.8 MB
+__[runlim] sample:		20.8 time, 40.9 real, 681.0 MB
+___[runlim] sample:		30.8 time, 50.9 real, 828.0 MB
+__[runlim] sample:		40.8 time, 60.9 real, 1048.9 MB
+__[runlim] sample:		50.8 time, 70.9 real, 1294.8 MB
+__[runlim] sample:		60.7 time, 80.9 real, 1549.6 MB
+__[runlim] sample:		70.7 time, 90.9 real, 1648.9 MB
+_[runlim] sample:		80.7 time, 100.9 real, 1881.5 MB
+__[runlim] sample:		90.7 time, 110.9 real, 2080.4 MB
+_[runlim] sample:		100.7 time, 120.9 real, 2153.6 MB
+_[runlim] sample:		110.7 time, 130.9 real, 2221.5 MB
+_.[runlim] sample:		120.7 time, 140.9 real, 2347.3 MB
+..[runlim] sample:		130.7 time, 150.9 real, 2610.2 MB
+...[runlim] sample:		140.7 time, 160.9 real, 3152.8 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for XOR **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.7 time, 170.9 real, 3228.9 MB
+[runlim] end:			Tue Apr 16 18:57:48 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		384
+[runlim] real:			174.36 seconds
+[runlim] time:			154.10 seconds
+[runlim] space:			3412.9 MB
+[runlim] samples:		1734
+property file: ./cosa/single_property_SRAI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SRAI.txt
+[runlim] start:			Tue Apr 16 18:57:48 2019
+[runlim] main pid:		18522
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.1 MB
+[runlim] sample:		0.7 time, 20.4 real, 58.9 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SRAI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.7 time, 30.4 real, 473.8 MB
+___[runlim] sample:		20.7 time, 40.4 real, 696.7 MB
+___[runlim] sample:		30.7 time, 50.4 real, 881.3 MB
+__[runlim] sample:		40.7 time, 60.4 real, 1075.5 MB
+__[runlim] sample:		50.7 time, 70.4 real, 1315.1 MB
+__[runlim] sample:		60.7 time, 80.4 real, 1519.2 MB
+__[runlim] sample:		70.7 time, 90.4 real, 1667.0 MB
+_[runlim] sample:		80.7 time, 100.4 real, 1919.0 MB
+_[runlim] sample:		90.7 time, 110.4 real, 2002.8 MB
+__[runlim] sample:		100.7 time, 120.4 real, 2184.2 MB
+_[runlim] sample:		110.6 time, 130.4 real, 2229.2 MB
+_.[runlim] sample:		120.6 time, 140.4 real, 2364.8 MB
+..[runlim] sample:		130.6 time, 150.4 real, 2500.5 MB
+...[runlim] sample:		140.6 time, 160.4 real, 3085.4 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SRAI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.6 time, 170.4 real, 3439.8 MB
+[runlim] end:			Tue Apr 16 19:00:44 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		386
+[runlim] real:			176.24 seconds
+[runlim] time:			156.43 seconds
+[runlim] space:			3448.1 MB
+[runlim] samples:		1758
+property file: ./cosa/single_property_ADDI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_ADDI.txt
+[runlim] start:			Tue Apr 16 19:00:44 2019
+[runlim] main pid:		18551
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 197.9 MB
+[runlim] sample:		0.5 time, 20.2 real, 53.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for ADDI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.5 time, 30.2 real, 473.2 MB
+___[runlim] sample:		20.5 time, 40.2 real, 642.4 MB
+__[runlim] sample:		30.5 time, 50.2 real, 815.8 MB
+___[runlim] sample:		40.5 time, 60.2 real, 1020.4 MB
+__[runlim] sample:		50.5 time, 70.2 real, 1251.0 MB
+__[runlim] sample:		60.5 time, 80.2 real, 1470.7 MB
+_[runlim] sample:		70.5 time, 90.2 real, 1626.1 MB
+__[runlim] sample:		80.5 time, 100.2 real, 1870.0 MB
+_[runlim] sample:		90.5 time, 110.2 real, 1932.7 MB
+_[runlim] sample:		100.5 time, 120.2 real, 2086.1 MB
+_[runlim] sample:		110.5 time, 130.2 real, 2194.4 MB
+_[runlim] sample:		120.4 time, 140.2 real, 2273.7 MB
+_..[runlim] sample:		130.4 time, 150.2 real, 2498.9 MB
+..[runlim] sample:		140.4 time, 160.2 real, 2724.0 MB
+...[runlim] sample:		150.4 time, 170.2 real, 3257.7 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for ADDI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		160.4 time, 180.2 real, 3229.8 MB
+[runlim] end:			Tue Apr 16 19:03:47 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		390
+[runlim] real:			183.49 seconds
+[runlim] time:			163.63 seconds
+[runlim] space:			3413.5 MB
+[runlim] samples:		1832
+property file: ./cosa/single_property_BGEU.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BGEU.txt
+[runlim] start:			Tue Apr 16 19:03:47 2019
+[runlim] main pid:		18588
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.5 real, 198.4 MB
+[runlim] sample:		20.0 time, 20.5 real, 279.7 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BGEU" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.0 time, 30.5 real, 474.2 MB
+___[runlim] sample:		20.0 time, 40.5 real, 634.9 MB
+___[runlim] sample:		30.0 time, 50.5 real, 864.7 MB
+__[runlim] sample:		40.0 time, 60.5 real, 1040.9 MB
+__[runlim] sample:		50.0 time, 70.5 real, 1207.0 MB
+__[runlim] sample:		60.0 time, 80.5 real, 1459.3 MB
+__[runlim] sample:		70.0 time, 90.5 real, 1646.0 MB
+_[runlim] sample:		80.0 time, 100.5 real, 1881.8 MB
+__[runlim] sample:		90.0 time, 110.5 real, 2065.5 MB
+_.[runlim] sample:		99.9 time, 120.5 real, 2116.8 MB
+..[runlim] sample:		110.0 time, 130.5 real, 2346.8 MB
+...[runlim] sample:		119.9 time, 140.5 real, 3014.1 MB
+...[runlim] sample:		129.9 time, 150.5 real, 3439.7 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BGEU **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		139.9 time, 160.5 real, 2535.4 MB
+[runlim] end:			Tue Apr 16 19:06:28 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		398
+[runlim] real:			161.23 seconds
+[runlim] time:			140.63 seconds
+[runlim] space:			3614.8 MB
+[runlim] samples:		1607
+property file: ./cosa/single_property_BGE.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BGE.txt
+[runlim] start:			Tue Apr 16 19:06:28 2019
+[runlim] main pid:		18632
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.2 real, 198.4 MB
+[runlim] sample:		20.0 time, 20.2 real, 280.4 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BGE" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.2 time, 30.2 real, 475.7 MB
+___[runlim] sample:		20.1 time, 40.2 real, 634.0 MB
+__[runlim] sample:		30.1 time, 50.2 real, 856.3 MB
+___[runlim] sample:		40.1 time, 60.2 real, 1042.8 MB
+__[runlim] sample:		50.1 time, 70.2 real, 1207.1 MB
+__[runlim] sample:		60.1 time, 80.2 real, 1461.6 MB
+__[runlim] sample:		70.1 time, 90.2 real, 1642.6 MB
+_[runlim] sample:		80.1 time, 100.2 real, 1882.5 MB
+_[runlim] sample:		90.1 time, 110.2 real, 2040.0 MB
+__.[runlim] sample:		100.1 time, 120.2 real, 2098.6 MB
+..[runlim] sample:		110.1 time, 130.2 real, 2276.1 MB
+...[runlim] sample:		120.1 time, 140.2 real, 2865.6 MB
+...[runlim] sample:		130.1 time, 150.2 real, 3387.5 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BGE **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		140.1 time, 160.2 real, 2618.2 MB
+[runlim] end:			Tue Apr 16 19:09:10 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		396
+[runlim] real:			162.40 seconds
+[runlim] time:			142.19 seconds
+[runlim] space:			3607.9 MB
+[runlim] samples:		1621
+property file: ./cosa/single_property_SLTIU.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLTIU.txt
+[runlim] start:			Tue Apr 16 19:09:10 2019
+[runlim] main pid:		18667
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.2 MB
+[runlim] sample:		20.0 time, 20.4 real, 279.5 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLTIU" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.0 time, 30.4 real, 530.2 MB
+___[runlim] sample:		20.0 time, 40.4 real, 634.1 MB
+__[runlim] sample:		30.0 time, 50.4 real, 843.4 MB
+___[runlim] sample:		40.0 time, 60.4 real, 1039.6 MB
+__[runlim] sample:		50.0 time, 70.4 real, 1203.2 MB
+__[runlim] sample:		60.0 time, 80.4 real, 1469.0 MB
+__[runlim] sample:		70.0 time, 90.4 real, 1639.7 MB
+_[runlim] sample:		80.0 time, 100.4 real, 1878.4 MB
+_[runlim] sample:		90.0 time, 110.4 real, 2059.2 MB
+__[runlim] sample:		100.0 time, 120.4 real, 2146.3 MB
+_[runlim] sample:		110.0 time, 130.4 real, 2277.3 MB
+_.[runlim] sample:		120.0 time, 140.4 real, 2322.9 MB
+..[runlim] sample:		130.0 time, 150.4 real, 2652.3 MB
+...[runlim] sample:		140.0 time, 160.4 real, 3144.8 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLTIU **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.0 time, 170.4 real, 3218.2 MB
+[runlim] end:			Tue Apr 16 19:12:03 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		398
+[runlim] real:			173.91 seconds
+[runlim] time:			153.49 seconds
+[runlim] space:			3402.6 MB
+[runlim] samples:		1735
+property file: ./cosa/single_property_LUI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_LUI.txt
+[runlim] start:			Tue Apr 16 19:12:03 2019
+[runlim] main pid:		18699
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.9 real, 198.0 MB
+[runlim] sample:		20.0 time, 20.9 real, 275.3 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for LUI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.3 time, 30.9 real, 364.2 MB
+___[runlim] sample:		19.3 time, 40.9 real, 626.5 MB
+__[runlim] sample:		29.3 time, 50.9 real, 798.3 MB
+___[runlim] sample:		39.3 time, 60.9 real, 1068.3 MB
+__[runlim] sample:		49.2 time, 70.9 real, 1276.3 MB
+__[runlim] sample:		59.2 time, 80.9 real, 1491.8 MB
+__[runlim] sample:		69.2 time, 90.9 real, 1706.6 MB
+_[runlim] sample:		79.2 time, 100.9 real, 1917.2 MB
+__[runlim] sample:		89.2 time, 110.9 real, 2029.4 MB
+_..[runlim] sample:		99.2 time, 120.9 real, 2238.3 MB
+..[runlim] sample:		109.2 time, 130.9 real, 2852.6 MB
+..[runlim] sample:		119.2 time, 140.9 real, 2824.3 MB
+...[runlim] sample:		129.2 time, 150.9 real, 3359.7 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for LUI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		139.2 time, 160.9 real, 2538.9 MB
+[runlim] end:			Tue Apr 16 19:14:44 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		414
+[runlim] real:			161.64 seconds
+[runlim] time:			139.92 seconds
+[runlim] space:			3475.3 MB
+[runlim] samples:		1607
+property file: ./cosa/single_property_SRA.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SRA.txt
+[runlim] start:			Tue Apr 16 19:14:44 2019
+[runlim] main pid:		18737
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.6 real, 197.9 MB
+[runlim] sample:		20.0 time, 20.6 real, 278.8 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SRA" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.8 time, 30.6 real, 453.5 MB
+___[runlim] sample:		19.8 time, 40.6 real, 632.6 MB
+__[runlim] sample:		29.7 time, 50.6 real, 811.5 MB
+___[runlim] sample:		39.7 time, 60.6 real, 1016.9 MB
+__[runlim] sample:		49.7 time, 70.6 real, 1251.0 MB
+__[runlim] sample:		59.7 time, 80.6 real, 1471.4 MB
+__[runlim] sample:		69.7 time, 90.6 real, 1654.2 MB
+_[runlim] sample:		79.7 time, 100.6 real, 1872.8 MB
+__[runlim] sample:		89.7 time, 110.6 real, 2076.4 MB
+_[runlim] sample:		99.7 time, 120.6 real, 2120.3 MB
+_[runlim] sample:		109.7 time, 130.6 real, 2221.3 MB
+[runlim] sample:		119.7 time, 140.6 real, 2287.5 MB
+_..[runlim] sample:		129.7 time, 150.6 real, 2526.6 MB
+...[runlim] sample:		139.7 time, 160.6 real, 2988.6 MB
+...[runlim] sample:		149.7 time, 170.6 real, 3389.6 MB
+ UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SRA **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] end:			Tue Apr 16 19:17:42 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		400
+[runlim] real:			178.95 seconds
+[runlim] time:			157.94 seconds
+[runlim] space:			3416.1 MB
+[runlim] samples:		1783
+property file: ./cosa/single_property_LOADx0.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_LOADx0.txt
+[runlim] start:			Tue Apr 16 19:17:42 2019
+[runlim] main pid:		18771
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 11.0 real, 198.1 MB
+[runlim] sample:		20.0 time, 21.0 real, 279.0 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for LOADx0" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.5 time, 31.0 real, 364.2 MB
+___[runlim] sample:		19.5 time, 41.0 real, 608.9 MB
+__[runlim] sample:		29.5 time, 51.0 real, 808.5 MB
+___[runlim] sample:		39.5 time, 61.0 real, 1055.5 MB
+__[runlim] sample:		49.5 time, 71.0 real, 1296.7 MB
+__[runlim] sample:		59.5 time, 81.0 real, 1470.9 MB
+__[runlim] sample:		69.5 time, 91.0 real, 1697.6 MB
+_[runlim] sample:		79.5 time, 101.0 real, 1899.4 MB
+_[runlim] sample:		89.5 time, 111.0 real, 2025.8 MB
+__[runlim] sample:		99.5 time, 121.0 real, 2177.7 MB
+_[runlim] sample:		109.5 time, 131.0 real, 2282.9 MB
+_.[runlim] sample:		119.4 time, 141.0 real, 2300.4 MB
+..[runlim] sample:		129.4 time, 151.0 real, 2593.9 MB
+...[runlim] sample:		139.4 time, 161.0 real, 3132.4 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for LOADx0 **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		149.4 time, 171.0 real, 3389.9 MB
+[runlim] end:			Tue Apr 16 19:20:37 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		408
+[runlim] real:			175.86 seconds
+[runlim] time:			154.33 seconds
+[runlim] space:			3411.1 MB
+[runlim] samples:		1749
+property file: ./cosa/single_property_LW.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_LW.txt
+[runlim] start:			Tue Apr 16 19:20:37 2019
+[runlim] main pid:		18800
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.9 real, 197.9 MB
+[runlim] sample:		0.3 time, 20.9 real, 50.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for LW" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.3 time, 30.9 real, 529.9 MB
+___[runlim] sample:		20.3 time, 40.9 real, 637.5 MB
+__[runlim] sample:		30.3 time, 50.9 real, 856.6 MB
+___[runlim] sample:		40.3 time, 60.9 real, 1032.4 MB
+__[runlim] sample:		50.3 time, 70.9 real, 1257.3 MB
+__[runlim] sample:		60.3 time, 80.9 real, 1481.1 MB
+__[runlim] sample:		70.3 time, 90.9 real, 1655.1 MB
+_[runlim] sample:		80.3 time, 100.9 real, 1878.4 MB
+_[runlim] sample:		90.3 time, 110.9 real, 2048.8 MB
+__[runlim] sample:		100.3 time, 120.9 real, 2146.4 MB
+_[runlim] sample:		110.3 time, 130.9 real, 2282.9 MB
+_.[runlim] sample:		120.3 time, 140.9 real, 2286.3 MB
+...[runlim] sample:		130.3 time, 150.9 real, 2817.4 MB
+..[runlim] sample:		140.3 time, 160.9 real, 3289.0 MB
+[runlim] sample:		150.3 time, 170.9 real, 3138.9 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for LW **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		160.3 time, 180.9 real, 3106.0 MB
+[runlim] end:			Tue Apr 16 19:23:40 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		392
+[runlim] real:			183.36 seconds
+[runlim] time:			162.67 seconds
+[runlim] space:			3444.7 MB
+[runlim] samples:		1824
+property file: ./cosa/single_property_SLTU.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLTU.txt
+[runlim] start:			Tue Apr 16 19:23:40 2019
+[runlim] main pid:		18850
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.2 MB
+[runlim] sample:		20.0 time, 20.4 real, 279.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLTU" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.7 time, 30.4 real, 505.7 MB
+___[runlim] sample:		19.7 time, 40.4 real, 639.1 MB
+___[runlim] sample:		29.7 time, 50.4 real, 818.0 MB
+__[runlim] sample:		39.7 time, 60.4 real, 1021.6 MB
+__[runlim] sample:		49.7 time, 70.4 real, 1322.0 MB
+__[runlim] sample:		59.7 time, 80.4 real, 1557.5 MB
+__[runlim] sample:		69.7 time, 90.4 real, 1760.9 MB
+_[runlim] sample:		79.7 time, 100.4 real, 1821.0 MB
+__[runlim] sample:		89.7 time, 110.4 real, 2087.3 MB
+_[runlim] sample:		99.7 time, 120.4 real, 2134.6 MB
+_[runlim] sample:		109.7 time, 130.4 real, 2311.2 MB
+[runlim] sample:		119.7 time, 140.4 real, 2303.4 MB
+_..[runlim] sample:		129.7 time, 150.4 real, 2507.7 MB
+...[runlim] sample:		139.7 time, 160.4 real, 2950.5 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLTU **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		149.7 time, 170.4 real, 3396.8 MB
+[runlim] end:			Tue Apr 16 19:26:37 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		404
+[runlim] real:			177.53 seconds
+[runlim] time:			156.75 seconds
+[runlim] space:			3396.8 MB
+[runlim] samples:		1771
+property file: ./cosa/single_property_SW.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SW.txt
+[runlim] start:			Tue Apr 16 19:26:37 2019
+[runlim] main pid:		18896
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.5 real, 197.9 MB
+[runlim] sample:		1.0 time, 20.5 real, 66.7 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SW" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.9 time, 30.5 real, 480.9 MB
+__[runlim] sample:		21.0 time, 40.5 real, 687.6 MB
+___[runlim] sample:		30.9 time, 50.5 real, 905.1 MB
+__[runlim] sample:		41.0 time, 60.5 real, 1077.2 MB
+___[runlim] sample:		50.9 time, 70.5 real, 1328.1 MB
+__[runlim] sample:		60.9 time, 80.5 real, 1544.2 MB
+_[runlim] sample:		70.9 time, 90.5 real, 1796.8 MB
+__[runlim] sample:		80.9 time, 100.5 real, 2007.1 MB
+_[runlim] sample:		90.9 time, 110.5 real, 2042.7 MB
+_[runlim] sample:		100.9 time, 120.5 real, 2189.9 MB
+_[runlim] sample:		110.9 time, 130.5 real, 2341.6 MB
+_.[runlim] sample:		120.9 time, 140.5 real, 2412.1 MB
+...[runlim] sample:		130.9 time, 150.5 real, 2871.2 MB
+..[runlim] sample:		140.9 time, 160.5 real, 3162.2 MB
+.[runlim] sample:		150.9 time, 170.5 real, 3152.7 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SW **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		160.9 time, 180.5 real, 2557.0 MB
+[runlim] end:			Tue Apr 16 19:29:38 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		380
+[runlim] real:			181.33 seconds
+[runlim] time:			161.58 seconds
+[runlim] space:			3445.6 MB
+[runlim] samples:		1807
+property file: ./cosa/single_property_SLT.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLT.txt
+[runlim] start:			Tue Apr 16 19:29:38 2019
+[runlim] main pid:		18938
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.3 real, 198.4 MB
+[runlim] sample:		0.8 time, 20.3 real, 63.5 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLT" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.8 time, 30.3 real, 478.0 MB
+__[runlim] sample:		20.8 time, 40.3 real, 681.8 MB
+___[runlim] sample:		30.8 time, 50.3 real, 840.5 MB
+__[runlim] sample:		40.8 time, 60.3 real, 1090.3 MB
+___[runlim] sample:		50.8 time, 70.3 real, 1345.0 MB
+__[runlim] sample:		60.8 time, 80.3 real, 1570.1 MB
+_[runlim] sample:		70.8 time, 90.3 real, 1769.6 MB
+_[runlim] sample:		80.8 time, 100.3 real, 1876.7 MB
+__[runlim] sample:		90.8 time, 110.3 real, 2128.1 MB
+_[runlim] sample:		100.8 time, 120.3 real, 2268.0 MB
+_[runlim] sample:		110.8 time, 130.3 real, 2277.1 MB
+_..[runlim] sample:		120.8 time, 140.3 real, 2406.2 MB
+.[runlim] sample:		130.8 time, 150.3 real, 2593.4 MB
+...[runlim] sample:		140.8 time, 160.3 real, 3130.2 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLT **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.7 time, 170.3 real, 3218.7 MB
+[runlim] end:			Tue Apr 16 19:32:31 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		384
+[runlim] real:			173.61 seconds
+[runlim] time:			153.94 seconds
+[runlim] space:			3403.1 MB
+[runlim] samples:		1732
+property file: ./cosa/single_property_BNE.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BNE.txt
+[runlim] start:			Tue Apr 16 19:32:31 2019
+[runlim] main pid:		18969
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.6 real, 197.8 MB
+[runlim] sample:		0.7 time, 20.6 real, 61.9 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BNE" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.7 time, 30.6 real, 475.7 MB
+__[runlim] sample:		20.7 time, 40.6 real, 696.0 MB
+___[runlim] sample:		30.7 time, 50.6 real, 896.3 MB
+__[runlim] sample:		40.7 time, 60.6 real, 1081.7 MB
+__[runlim] sample:		50.7 time, 70.6 real, 1336.7 MB
+__[runlim] sample:		60.7 time, 80.6 real, 1493.3 MB
+__[runlim] sample:		70.7 time, 90.6 real, 1710.0 MB
+_[runlim] sample:		80.7 time, 100.6 real, 1827.8 MB
+_[runlim] sample:		90.7 time, 110.6 real, 2000.8 MB
+_[runlim] sample:		100.7 time, 120.6 real, 2167.1 MB
+_..[runlim] sample:		110.7 time, 130.6 real, 2327.8 MB
+...[runlim] sample:		120.7 time, 140.6 real, 2652.8 MB
+...[runlim] sample:		130.7 time, 150.6 real, 3169.9 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BNE **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		140.7 time, 160.6 real, 3618.9 MB
+[runlim] end:			Tue Apr 16 19:35:16 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		386
+[runlim] real:			165.73 seconds
+[runlim] time:			145.78 seconds
+[runlim] space:			3666.8 MB
+[runlim] samples:		1651
+property file: ./cosa/single_property_OR.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_OR.txt
+[runlim] start:			Tue Apr 16 19:35:16 2019
+[runlim] main pid:		18998
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.7 real, 198.4 MB
+[runlim] sample:		0.6 time, 20.7 real, 56.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction For OR" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+_[runlim] sample:		10.6 time, 30.7 real, 474.3 MB
+__[runlim] sample:		20.6 time, 40.7 real, 694.5 MB
+___[runlim] sample:		30.6 time, 50.7 real, 813.8 MB
+__[runlim] sample:		40.5 time, 60.7 real, 988.9 MB
+__[runlim] sample:		50.5 time, 70.7 real, 1288.3 MB
+__[runlim] sample:		60.5 time, 80.7 real, 1466.9 MB
+__[runlim] sample:		70.5 time, 90.7 real, 1650.0 MB
+_[runlim] sample:		80.5 time, 100.7 real, 1873.3 MB
+__[runlim] sample:		90.5 time, 110.7 real, 2089.5 MB
+[runlim] sample:		100.5 time, 120.7 real, 2113.3 MB
+__[runlim] sample:		110.5 time, 130.7 real, 2227.9 MB
+_.[runlim] sample:		120.5 time, 140.7 real, 2297.8 MB
+..[runlim] sample:		130.5 time, 150.7 real, 2594.6 MB
+...[runlim] sample:		140.5 time, 160.7 real, 3134.5 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction For OR **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.5 time, 170.7 real, 3230.0 MB
+[runlim] end:			Tue Apr 16 19:38:11 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		388
+[runlim] real:			175.35 seconds
+[runlim] time:			155.10 seconds
+[runlim] space:			3415.8 MB
+[runlim] samples:		1746
+property file: ./cosa/single_property_XORI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_XORI.txt
+[runlim] start:			Tue Apr 16 19:38:11 2019
+[runlim] main pid:		19046
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.4 real, 198.0 MB
+[runlim] sample:		20.0 time, 20.4 real, 279.0 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for XORI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.9 time, 30.4 real, 452.0 MB
+___[runlim] sample:		19.8 time, 40.4 real, 634.6 MB
+__[runlim] sample:		29.8 time, 50.4 real, 766.4 MB
+___[runlim] sample:		39.7 time, 60.4 real, 1075.2 MB
+__[runlim] sample:		49.7 time, 70.4 real, 1290.5 MB
+__[runlim] sample:		59.7 time, 80.4 real, 1469.8 MB
+_[runlim] sample:		69.7 time, 90.4 real, 1649.9 MB
+__[runlim] sample:		79.7 time, 100.4 real, 1787.1 MB
+_[runlim] sample:		89.7 time, 110.4 real, 2028.1 MB
+_[runlim] sample:		99.6 time, 120.4 real, 2150.0 MB
+__[runlim] sample:		109.6 time, 130.4 real, 2234.7 MB
+_.[runlim] sample:		119.6 time, 140.4 real, 2372.4 MB
+.[runlim] sample:		129.6 time, 150.4 real, 2522.0 MB
+...[runlim] sample:		139.6 time, 160.4 real, 3024.9 MB
+... UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for XORI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		149.6 time, 170.4 real, 3446.6 MB
+[runlim] end:			Tue Apr 16 19:41:09 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		400
+[runlim] real:			178.76 seconds
+[runlim] time:			157.99 seconds
+[runlim] space:			3446.6 MB
+[runlim] samples:		1784
+property file: ./cosa/single_property_BLT.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_BLT.txt
+[runlim] start:			Tue Apr 16 19:41:09 2019
+[runlim] main pid:		19074
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.8 real, 198.1 MB
+[runlim] sample:		19.9 time, 20.8 real, 279.0 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for BLT" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		9.8 time, 30.8 real, 503.5 MB
+___[runlim] sample:		19.8 time, 40.8 real, 631.6 MB
+__[runlim] sample:		29.8 time, 50.8 real, 806.2 MB
+___[runlim] sample:		39.8 time, 60.8 real, 1072.8 MB
+__[runlim] sample:		49.8 time, 70.8 real, 1277.0 MB
+__[runlim] sample:		59.8 time, 80.8 real, 1473.1 MB
+__[runlim] sample:		69.8 time, 90.8 real, 1692.8 MB
+_[runlim] sample:		79.8 time, 100.8 real, 1921.0 MB
+__[runlim] sample:		89.8 time, 110.8 real, 2042.6 MB
+_.[runlim] sample:		99.8 time, 120.8 real, 2183.0 MB
+..[runlim] sample:		109.8 time, 130.8 real, 2344.6 MB
+...[runlim] sample:		119.8 time, 140.8 real, 2826.1 MB
+...[runlim] sample:		129.8 time, 150.8 real, 3295.2 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for BLT **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		139.8 time, 160.8 real, 2553.0 MB
+[runlim] end:			Tue Apr 16 19:43:51 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		404
+[runlim] real:			162.54 seconds
+[runlim] time:			141.47 seconds
+[runlim] space:			3664.3 MB
+[runlim] samples:		1617
+property file: ./cosa/single_property_SLTI.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_SLTI.txt
+[runlim] start:			Tue Apr 16 19:43:51 2019
+[runlim] main pid:		19104
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.5 real, 198.1 MB
+[runlim] sample:		0.3 time, 20.5 real, 50.1 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for SLTI" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.3 time, 30.5 real, 473.1 MB
+___[runlim] sample:		20.3 time, 40.5 real, 634.1 MB
+__[runlim] sample:		30.3 time, 50.6 real, 874.0 MB
+___[runlim] sample:		40.3 time, 60.5 real, 1050.2 MB
+__[runlim] sample:		50.3 time, 70.6 real, 1277.0 MB
+__[runlim] sample:		60.3 time, 80.6 real, 1450.0 MB
+__[runlim] sample:		70.3 time, 90.5 real, 1669.5 MB
+_[runlim] sample:		80.3 time, 100.5 real, 1881.3 MB
+__[runlim] sample:		90.3 time, 110.5 real, 2106.4 MB
+_[runlim] sample:		100.3 time, 120.6 real, 2265.0 MB
+_[runlim] sample:		110.3 time, 130.5 real, 2277.1 MB
+_..[runlim] sample:		120.3 time, 140.5 real, 2456.4 MB
+...[runlim] sample:		130.3 time, 150.5 real, 2808.9 MB
+..[runlim] sample:		140.3 time, 160.5 real, 3279.1 MB
+. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for SLTI **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.2 time, 170.5 real, 2196.7 MB
+[runlim] end:			Tue Apr 16 19:46:41 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		394
+[runlim] real:			170.72 seconds
+[runlim] time:			150.36 seconds
+[runlim] space:			3446.4 MB
+[runlim] samples:		1701
+property file: ./cosa/single_property_ADD.txt
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		32164 MB
+[runlim] argv[0]:		CoSA
+[runlim] argv[1]:		--problems
+[runlim] argv[2]:		./cosa/single_property_ADD.txt
+[runlim] start:			Tue Apr 16 19:46:41 2019
+[runlim] main pid:		19145
+Parsing file "./cosa/ridecore.vlist"... Reading source files from "ridecore.vlist"... [runlim] sample:		10.0 time, 10.7 real, 198.2 MB
+[runlim] sample:		20.0 time, 20.7 real, 279.5 MB
+DONE
+Parsing file "./cosa/reset_procedure.ets"... DONE
+Parsing file "./cosa/init.ssts"... DONE
+Parsing file "./cosa/state_copy.ssts"... DONE
+Parsing file "./cosa/nop_m.ssts"... DONE
+Solving "Single Instruction for ADD" 
+WARNING: Using default_initial_value with arrays, but btor does not support constant arrays. Any assumptions on initial array values will have to be done manually
+[runlim] sample:		10.1 time, 30.7 real, 530.2 MB
+___[runlim] sample:		20.1 time, 40.7 real, 637.2 MB
+__[runlim] sample:		30.1 time, 50.7 real, 818.3 MB
+___[runlim] sample:		40.0 time, 60.7 real, 1020.5 MB
+__[runlim] sample:		50.0 time, 70.7 real, 1242.5 MB
+__[runlim] sample:		60.0 time, 80.7 real, 1478.8 MB
+__[runlim] sample:		70.0 time, 90.7 real, 1631.1 MB
+__[runlim] sample:		80.0 time, 100.7 real, 1914.1 MB
+_[runlim] sample:		90.0 time, 110.7 real, 2093.6 MB
+_[runlim] sample:		100.0 time, 120.7 real, 2192.8 MB
+_[runlim] sample:		110.0 time, 130.7 real, 2278.1 MB
+_..[runlim] sample:		120.0 time, 140.7 real, 2437.7 MB
+.[runlim] sample:		130.0 time, 150.7 real, 2599.5 MB
+...[runlim] sample:		140.0 time, 160.7 real, 3159.1 MB
+.. UNKNOWN
+
+*** SUMMARY ***
+
+** Problem Single Instruction for ADD **
+Description: "Check for Single Instruction"
+Result: UNKNOWN
+BMC depth: 27
+[runlim] sample:		150.0 time, 170.7 real, 3237.0 MB
+[runlim] end:			Tue Apr 16 19:49:35 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		399
+[runlim] real:			174.87 seconds
+[runlim] time:			154.10 seconds
+[runlim] space:			3422.7 MB
+[runlim] samples:		1741
