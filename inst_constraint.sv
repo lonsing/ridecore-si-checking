@@ -137,8 +137,6 @@ module inst_constraint(clk,
 // Do not constrain the registers in LW, SW. This is needed for QED but not for
 // single-instruction checking.
 //
-// TODO: check whether we need to constrain the immediate field (upper 12 bits for LW), but likely not
-//
 // lw and sw constraints => to allow for finite memory instantiated in dmem by ridecore
 //   assign LW = ((rs1 == 5'b00000) && (rd < 16) && (opcode == 7'b0000011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
 //   assign SW = ((rs1 == 5'b00000) && (rs2 < 16) && (opcode == 7'b0100011) && (funct3 == 3'b010) && (instruction[31:30] == 2'b00));
