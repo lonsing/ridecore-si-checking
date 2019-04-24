@@ -4,11 +4,9 @@ OUTPUT
 
 STATE
 
-
 INIT
 
-
 INVAR
+(state_counter >= 2_10) -> (inst_constraint0.NOP = 1_1) ;
 
 TRANS
-(state_counter > 9_10) -> (next(opcode) = 127_7) ;
